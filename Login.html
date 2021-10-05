@@ -1,0 +1,81 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>تسجيل الدخول</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" />
+    <link href="Libraries/sweetalert/css/sweetalert2.css" rel="stylesheet" />
+    <script src="Libraries/sweetalert/js/sweetalert2.common.js"></script>
+    <script src="Libraries/sweetalert/js/sweetalert2.js"></script>
+    <link href="css/loginstyle.css" rel="stylesheet" />
+
+    
+    <style type="text/css">
+    body{
+        background-image: url(images/background.png);
+    }
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('WaitForLoading.gif') 30% 30% no-repeat rgb(249,249,249);
+        }
+    </style>
+    
+
+    
+    
+</head>
+<body dir="rtl">
+
+   
+    <form id="form1" method="post" action="login.php" >
+         <scriptManager id="ScriptManager1"></scriptManager>
+        <updateProgress id="UpdateProgress2"  DisplayAfter="500">
+            <ProgressTemplate>
+                <img alt="loading" src="index.dual-gear-loading-icon.gif" />
+            </ProgressTemplate>
+        </updateProgress>
+
+             <updatePanel id="UpdatePanel2"  updatemode="Conditional"></updatePanel>
+                
+            <div class="login">
+            <div class="login-triangle"></div>
+            <h2 class="login-header">تسجيل الدخول</h2>
+
+            <div class="login-container">
+                <p>
+                    <input type="text" name="username" placeholder="اسم المستخدم" required id="txtCode">
+        
+        
+                </p>
+                <p>
+                    <input type="password" name="password" placeholder="كلمة المرور"  id="TxtPass" required>
+                </p>
+                <p>
+                <input type="submit" value="تسجيل الدخول" id="BtnLogin">
+                </p>
+            </div>
+        </div>
+        
+    </form>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61374393d6e7610a49b40b75/1fevtvu75';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>

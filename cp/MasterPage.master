@@ -1,0 +1,103 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head runat="server">
+    <title> البرمجة بلغة سكراتش - لوحة التحكم</title>
+    
+    
+<link href="../w3.css" rel="stylesheet" />
+<link href="../Level/LevelStyle.css" rel="stylesheet" />
+<script src="https://kit.fontawesome.com/28ae82ec32.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="font-family: 'Droid Arabic Kufi';">
+    <nav class="navbar navbar-dark" style="color: #fff !important; background-color: #000 !important;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="../logout.aspx">خروج</a>
+     </li>
+    </ul>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../default.aspx">الرئيسيه</a></li>
+      <li><a href="students.aspx">قائمة الطلاب</a></li>
+      <li><a href="groups.aspx">المجموعات</a></li>
+        <li><a href="lvlsNquizs.aspx">الألغاز</a></li>
+       
+    </ul>
+  </div>
+</nav>
+    <form id="form1" runat="server">
+        <div>
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+     
+    
+    <!-- Latest compiled and minified JavaScript -->
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script>
+        document.getElementsByClassName("tablink")[0].click();
+
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].classList.remove("w3-light-grey");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.classList.add("w3-light-grey");
+        }
+
+
+
+
+    </script>
+<style>
+
+    @media (min-width: 768px) {
+        .navbar-nav {
+            float: right;
+            margin: 0;
+        }
+        .navbar-nav>li {
+            float: right;
+        }
+    }
+    .nav-tabs>li {
+        float: right;
+        margin-bottom: -1px;
+    }
+    .tab-pane{
+        padding:50px;
+    }
+    .navbar-nav a{
+        color:#fff;
+    }
+</style>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+</body>
+</html>

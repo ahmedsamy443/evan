@@ -1,0 +1,3 @@
+C:\Users\ahmed\Downloads\ScrachWebsite\ScrachWebsite\ScrachWebsite\obj\Release\ScrachWebsite.Resources.resources
+C:\Users\ahmed\Downloads\ScrachWebsite\ScrachWebsite\ScrachWebsite\obj\Release\ScrachWebsite.vbproj.GenerateResource.Cache
+C:\Users\ahmed\Downloads\ScrachWebsite\ScrachWebsite\ScrachWebsite\obj\Release\ScrachWebsite.dll.licenses

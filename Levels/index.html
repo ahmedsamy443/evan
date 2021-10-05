@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wizard-v1</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/raleway-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="snake.js"></script>
+</head>
+<body>
+	<div class="page-content" style="background-image: url('Back2.png')">
+		<div class="wizard-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" id="form-register" action="#" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+			            	<span class="step-number"> (1)</span>
+			            	<span class="step-text"> الأهداف </span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<!--<label for="username">في نهاية المستوى يجب أن :</label>-->
+										<h3>في نهاية المستوى يجب أن :</h3>
+                                        أن تحدد ماهية برنامج Scratch. <br />
+                                        أن ُتعرف برنامج Scratch. <br />
+                                        أن تحدد أهمية برنامج scratch.<br />
+                                        أن تسرد مزايا برنامج scratch.<br />
+
+									</div>
+								</div>
+								 
+								 
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+			            	<span class="step-number">(2)</span>
+			            	<span class="step-text">مقدمة عن اسكراتش</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+								<div class="form-row">
+
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BdBV-Cy9fNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+								</div>
+								 
+								 
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+			            	<span class="step-number">(3)</span>
+			            	<span class="step-text">سؤال</span>
+			            </h2>
+			            <section>
+                            <!-- اللعبة -->
+                            <div class="inner">
+
+                                <canvas id="snake" width="608" height="608"></canvas>
+                                <script src="snake.js"></script>
+                                </div>
+                                <!-- نهايةاللعبة -->
+                                <!--<div class="inner">
+            <h3>Comfirm Details</h3>
+            <div class="form-row table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr class="space-row">
+                            <th>Username:</th>
+                            <td id="username-val"></td>
+                        </tr>
+                        <tr class="space-row">
+                            <th>Email Address:</th>
+                            <td id="email-val"></td>
+                        </tr>
+                        <tr class="space-row">
+                            <th>Card Type:</th>
+                            <td id="card-type-val"></td>
+                        </tr>
+                        <tr class="space-row">
+                            <th>Card Number:</th>
+                            <td id="card-number-val"></td>
+                        </tr>
+                        <tr class="space-row">
+                            <th>CVC:</th>
+                            <td id="cvc-val"></td>
+                        </tr>
+                        <tr class="space-row">
+                            <th>Expiry Month:</th>
+                            <td id="month-val"></td>
+                        </tr>
+                        <tr class="space-row">
+                            <th>Expiry Year:</th>
+                            <td id="year-val"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>-->
+</section>
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

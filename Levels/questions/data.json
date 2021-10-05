@@ -1,0 +1,418 @@
+[
+    {
+        "id": 1,
+        "type": 1,
+        "question":  "لانشاء ملف جديد فى برنامج scratch يتم اختيار الامر ................. من قائمة file.",
+        "ansA": "Save.",
+        "ansB": "Open.",
+        "ansC": "New.",
+        "ansD": "Exit.",
+        "correct": "New.",
+        "selected": ""
+    },
+    {
+        "id": 2,
+        "type": 1,
+        "question": "يسمي ترتيب مجموعة من الاومر الرسومية فى ترتيب معين ب ......................",
+        "ansA": "المقطع البرمجي.",
+        "ansB": "اتجاه الكائنات.",
+        "ansC": "مجموعات البرمجة.",
+        "ansD": "منطقة الكائنات.",
+        "correct": "المقطع البرمجي.",
+        "selected": ""
+    },
+    {
+        "id": 3,
+        "type": 1,
+        "question": "يستخدم الرمز ...... لتغيير لغة واجهة برنامج scratch إلى اللغه العربيه.",
+        "ansA": "<span><img src='../images/exam_images/1.jpg' /></span>",
+        "ansB": " <span><img src='../images/exam_images/2.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/3.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/4.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/3.jpg' /></span>",
+        "selected": ""
+    },
+    {
+        "id": 4,
+        "type": 1,
+        "question": "يستخدم الرمز ........................ فى ادراج كائن من المكتبة .",
+        "ansA": "<span><img src='../images/exam_images/5.jpg' /></span>",
+        "ansB": " <span><img src='../images/exam_images/6.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/7.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/8.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/7.jpg' /></span>",
+        "selected": ""
+    },
+    {
+        "id": 5,
+        "type": 1,
+        "question": "لفتح ملف سابق فى برنامج scratch يتم اختيار الأمر ................. من قائمة file.",
+        "ansA": "Save.",
+        "ansB": "Open.",
+        "ansC": " New. ",
+        "ansD": "Exit.",
+        "correct": "Open.",
+        "selected": ""
+    },
+    {
+        "id": 6,
+        "type": 1,
+        "question": "يستخدم الر مز ......... فى تكرار الكائن على المنصة .",
+        "ansA": "<span><img src='../images/exam_images/9.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/10.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/11.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/12.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/10.jpg' /></span>",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 7,
+        "type": 1,
+        "question": "يستخدم برنامج scratch في ..........................",
+        "ansA": "عمل قصص تفاعلية .",
+        "ansB": " تصميم رسومات متحركة .",
+        "ansC": "تركيب اللبنات مع بعضها البعض .",
+        "ansD": "جميع ما سبق يعد صحيحا.",
+        "correct": "جميع ما سبق يعد صحيحا.",
+        "selected": ""
+    },
+    {
+        "id": 8,
+        "type": 1,
+        "question": "من مكونات الشاشة الرئيسية فى برنامج scratch ................. ",
+        "ansA": "شريط العنوان .",
+        "ansB": "منطقة البرمجة .",
+        "ansC": "المنصة .",
+        "ansD": "جميع ما سبق يعد صحيحا .",
+        "correct":"جميع ما سبق يعد صحيحا .",
+        "selected": ""
+    },
+    {
+        "id": 9,
+        "type": 1,
+        "question": "يطلق على الصورة التى تغطى المنصة  ........................",
+        "ansA": "خلفية المنصة .",
+        "ansB": " شريط ادوات التعديل .",
+        "ansC": "منطقة الكائنات .",
+        "ansD": "منطقة المنصة .",
+        "correct":  "خلفية المنصة .",
+        "selected": ""
+    },
+    {
+        "id": 10,
+        "type": 1,
+        "question": "يحتوي برنامج Scratch على .............",
+        "ansA": "موثرات صوتية .",
+        "ansB": "اصوات حيوانات .",
+        "ansC": "اصوات الات موسيقية .",
+        "ansD": "جميع ما سبق يعد صحيحا .",
+        "correct":"جميع ما سبق يعد صحيحا .",
+        "selected": ""
+    },
+    {
+        "id": 11,
+        "type": 1,
+        "question": "تستخدم مجموعة ............ فى تحديد حركة الكائنات ودوراتها ",
+        "ansA": "<span><img src='../images/exam_images/25.jpg' /></span>",
+        "ansB": " <span><img src='../images/exam_images/26.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/27.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/28.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/25.jpg' /></span>",
+        "selected": ""
+    },
+    {
+        "id": 12,
+        "type": 1,
+        "question": "تستخدم لبنة ................ لتكرار مقطع برمجي عدد محدد من المرات .",
+        "ansA": "<span><img src='../images/exam_images/37.jpg' /></span>",
+        "ansB": " <span><img src='../images/exam_images/38.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/39.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/40.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/40.jpg' /></span>",
+        "selected": ""
+    },
+    {
+        "id": 13,
+        "type": 1,
+        "question": "تستخدم لبنة ....................... فى رسم خط على المنصة .",
+        "ansA": "<span><img src='../images/exam_images/40.jpg' /></span>",
+        "ansB": " <span><img src='../images/exam_images/41.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/42.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/43.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/42.jpg' /></span>",
+        "selected": ""
+    },
+    {
+        "id": 14,
+        "type": 1,
+        "question": "لحفظ المشروع فى برنامج scratch يتم اختيار الامر ................. من قائمة file.",
+        "ansA": "Save As.",
+        "ansB": "Delete.",
+        "ansC": "Open.",
+        "ansD": "New.",
+        "correct": "Save As.",
+        "selected": ""
+    },
+    {
+        "id": 15,
+        "type": 1,
+        "question": "تستحدم مجموعة ............... فى التحكم فى شكل ونمط الكائنات .",
+        "ansA": "<span><img src='../images/exam_images/25.jpg' /></span>",
+        "ansB": " <span><img src='../images/exam_images/27.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/18.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/20.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/20.jpg' /></span>",
+        "selected": ""
+    },
+    {
+        "id": 16,
+        "type": 1,
+        "question": "  الكائن ............. عند ما يصل الى حافة المنصة <span><img src='../images/exam_images/51.jpg' /></span>تجعل لبنة .",
+        "ansA": "يتوقف .",
+        "ansB": "يرتد .",
+        "ansC": "ينتظر .",
+        "ansD": "يغير اتجاهة .",
+        "correct": "يرتد .",
+        "selected": ""
+    },
+    {
+        "id": 17,
+        "type": 1,
+        "question": " تستخدم لبنة ............. في اظهار المظهر التالى للكائن على المنصة .",
+        "ansA": "<span><img src='../images/exam_images/45.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/46.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/47.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/48.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/46.jpg' /></span>",
+        "selected": ""
+    },
+    {
+        "id": 18,
+        "type": 1,
+        "question": " يقوم الاختيار file up down بعكس اتجاة الخلفية ...................",
+        "ansA": "افقيا وراسيا . ",
+        "ansB": "افقيا .",
+        "ansC": "راسيا .",
+        "ansD": "لا شي مما سبق .",
+        "correct": "راسيا .",
+        "selected": ""
+    },
+    {
+        "id": 19,
+        "type": 1,
+        "question": " تبويب .................... مسئول عن تشغيل وتسجيل الاصوات الخاصة بالكائنات",
+        "ansA": "<span><img src='../images/exam_images/26.jpg' /></span>",
+        "ansB": " <span><img src='../images/exam_images/59.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/63.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/60.jpg' /></span>",
+        "correct":"<span><img src='../images/exam_images/60.jpg' /></span>",
+        "selected": ""
+    },
+    {
+        "id": 20,
+        "type": 1,
+        "question": "تستخدم مجموعة .............. فى رسم اشكال هندسية . ",
+        "ansA": "<span><img src='../images/exam_images/59.jpg' /></span>",
+        "ansB": " <span><img src='../images/exam_images/84.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/60.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/61.jpg' /></span>",
+        "correct": " <span><img src='../images/exam_images/84.jpg' /></span>",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 21,
+        "type": 1,
+        "question": " تستخدم لبنة ............ للتحكم فى زاوية دوران الكائن على المنصة .",
+        "ansA": "turn.",
+        "ansB": "Right To Left.",
+        "ansC": "Up Down.",
+        "ansD": "Left To Right.",
+        "correct": "turn.",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 22,
+        "type": 1,
+        "question": "لاضافة مقطع صوتي للمشروع يتم سحب لبنة ..................",
+        "ansA": "<span><img src='../images/exam_images/65.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/66.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/67.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/68.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/65.jpg' /></span>",
+        "selected": ""
+    } ,
+    {
+        "id": 23,
+        "type": 1,
+        "question": "منطقة .............. يظهر عليها نتيجة مشروعك .",
+        "ansA": "المنصة .",
+        "ansB": "البرمجه .",
+        "ansC": "شريط القوائم .",
+        "ansD": "الكائنات .",
+        "correct": "المنصة .",
+        "selected": ""
+    } ,
+    {
+        "id": 24,
+        "type": 1,
+        "question": "للتراجع عن حذف كائن من على المنصة يتم اختيار الامر ............ من قائمة Edit.",
+        "ansA": "Help .",
+        "ansB": "Duplicate .",
+        "ansC": "Grow .",
+        "ansD": "un Delete .",
+        "correct": "un Delete .",
+        "selected": ""
+    } ,
+    {
+        "id": 25,
+        "type": 1,
+        "question": "يمكن من خلال تبويب ................. التعامل مع الخلفيات .",
+        "ansA": "<span><img src='../images/exam_images/43.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/44.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/59.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/60.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/44.jpg' /></span>",
+        "selected": ""
+    } ,
+    {
+        "id": 26,
+        "type": 1,
+        "question": "تستخدم لبنة ............ فى اظهار المظهر التالى للكائن على المنصة .",
+        "ansA": "<span><img src='../images/exam_images/45.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/46.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/47.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/48.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/46.jpg' /></span>",
+        "selected": ""
+    } ,
+    {
+        "id": 27,
+        "type": 1,
+        "question": "يمكن استعراض المظاهر المختلفة للكائنات من خلال تبويب ..................",
+        "ansA": "<span><img src='../images/exam_images/69.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/60.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/43.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/44.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/43.jpg' /></span>",
+        "selected": ""
+    } ,
+    {
+        "id": 28,
+        "type": 1,
+        "question": "يطلق على صورة أو رسمة اخرى لنفس الكائن فى وضع مختلف ..................",
+        "ansA": "منطقة المنصة.",
+        "ansB": "المظهر.",
+        "ansC": "خلفية المنصة.",
+        "ansD": "منطقة الكائنات.",
+        "correct": "المظهر.",
+        "selected": ""
+    } ,
+    {
+        "id": 29,
+        "type": 1,
+        "question": "يمكنك تشغيل برنامج scratch وجهاز الكمبيوتر متصل ب .....................",
+        "ansA": "الطابعه.",
+        "ansB": "الانترنت .",
+        "ansC": "الماسح الضوئى.",
+        "ansD": "السماعات.",
+        "correct":"الانترنت .",
+        "selected": ""
+    } ,
+    {
+        "id": 30,
+        "type": 1,
+        "question": "تستخدم لبنة ........... فى تحديد اتجاة حركة الكائن على المنصة .",
+        "ansA": "<span><img src='../images/exam_images/33.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/30.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/23.jpg' /></span>'",
+        "ansD": "<span><img src='../images/exam_images/34.jpg' /></span>",
+        "correct":"<span><img src='../images/exam_images/33.jpg' /></span>",
+        "selected": ""
+    } ,
+    {
+        "id": 31,
+        "type": 1,
+        "question": "يوجد فى منطقة ............ اللبنات المستخدمة فى المشروع .",
+        "ansA": "التكبير.",
+        "ansB": "الكائنات.",
+        "ansC": "المنصة.",
+        "ansD": "البرمجة.",
+        "correct": "البرمجة.",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 32,
+        "type": 1,
+        "question": "يستخدم لبنة ................. فى تنفيذ المقطع البرمجي .",
+        "ansA": "<span><img src='../images/exam_images/5.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/14.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/15.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/16.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/16.jpg' /></span>",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 33,
+        "type": 1,
+        "question": "تستخدم لبنة ............... في تنفيذ المقطع البرمجي .",
+        "ansA": "<span><img src='../images/exam_images/21.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/22.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/23.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/24.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/24.jpg' /></span>",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 34,
+        "type": 1,
+        "question": "من مميزات برنامج scratch ...................",
+        "ansA": "متوافر باللغتين العربية واإلنجليزية.",
+        "ansB": "برنامج تجريبى.",
+        "ansC": "يحتاج إلى إتصال باإلنترنت.",
+        "ansD": "مغلق المصدر.",
+        "correct": "متوافر باللغتين العربية واإلنجليزية.",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 35,
+        "type": 1,
+        "question": "تستخدم لبنة ........... لجعل الكائن يتوقف لثوانى محددة .",
+        "ansA": "<span><img src='../images/exam_images/29.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/32.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/35.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/36.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/35.jpg' /></span>",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 36,
+        "type": 1,
+        "question": "تستخدم مجموعة ........... في تحديد الاحداث التى تقع على الكائنات لبدء تنفيذ المشروع .",
+        "ansA": "<span><img src='../images/exam_images/17.jpg' /></span>",
+        "ansB": "<span><img src='../images/exam_images/18.jpg' /></span>",
+        "ansC": "<span><img src='../images/exam_images/19.jpg' /></span>",
+        "ansD": "<span><img src='../images/exam_images/20.jpg' /></span>",
+        "correct": "<span><img src='../images/exam_images/18.jpg' /></span>",
+        "selected": ""
+    }
+    ,
+    {
+        "id": 37,
+        "type": 1,
+        "question": "اذكر الشكل الناتج عن رسم القط سكراتش : <br> '<span><img src='../images/exam_images/love.PNG' /></span>",
+        "ansA": "مستطيل.",
+        "ansB": "مربع.",
+        "ansC": "شكل خماسي.",
+        "ansD": "شكل سداسى.",
+        "correct": "شكل خماسي.",
+        "selected": ""
+    }
+]

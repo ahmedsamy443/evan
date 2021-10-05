@@ -1,0 +1,288 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+.mediaViewInfo {
+	--web-view-name: Gameification;
+	--web-view-id: Gameification;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-show-by-media-query: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Gameification;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Gameification {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	/*left: 50%;
+	top: 50%;*/
+	/*width: 1347px;
+	height: 780px;*/
+    width:100%;
+    height:100%;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Gameification;
+	--web-view-id: Gameification;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-show-by-media-query: true;
+	--web-enable-deep-linking: true;
+}
+#Group_1 {
+	position: absolute;
+	1px;
+	top: 0px;
+	overflow: visible;
+}
+#BackGround {
+	pit	posioverflow: visible;
+}
+#BackGround {
+	position: absolute;
+	/*width: 1348px;
+	height: 758px;*/
+    width:100%;
+    height:100%;
+	left: 0px;
+	top: 25px;
+	overflow: visible;
+}
+.ContentBox {
+	position: absolute;
+	overflow: visible;
+	width: 913px;
+	height: 404px;
+	left: 80px;
+	top: 185px;
+}
+.HeadBackground {
+	position: absolute;
+	overflow: visible;
+	/*width: 1348px;*/
+	height: 60px;
+    width:100%;
+    /*height:100%;*/
+	left: 0px;
+	top: 0px;
+}
+#ContentHeader {
+	position: absolute;
+	left: 487.5px;
+	top: 196.5px;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	color: rgba(91,86,86,1);
+}
+#BtnNext {
+	position: absolute;
+	width: 72px;
+	height: 72px;
+	left: 465px;
+	top: 542px;
+	overflow: visible;
+}
+#Home {
+	position: absolute;
+	left: 35px;
+	top: 20px;
+	overflow: visible;
+	width: 46px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+#Logoff {
+	position: absolute;
+	left: 95px;
+	top: 17px;
+	overflow: visible;
+	width: 85px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+}
+#StPic {
+	position: absolute;
+	width: 64px;
+	height: 60px;
+	left: 1271px;
+	top: 0px;
+	overflow: visible;
+}
+#StNameLogin {
+	position: absolute;
+	left: 1159px;
+	top: 20px;
+	overflow: visible;
+	width: 104px;
+	white-space: nowrap;
+	text-align: left;
+	/*font-family: Al-Jazeera-Arabic;*/
+    font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+#ScoreIcon {
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	left: 1067px;
+	top: 15px;
+	overflow: visible;
+}
+#StTotalScore {
+	position: absolute;
+	left: 1032px;
+	top: 16px;
+	overflow: visible;
+	width: 27px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: DroidArabicKufiRegular;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+#MidalIcon {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 963px;
+	top: 11px;
+	overflow: visible;
+}
+#StTotalMidal {
+	position: absolute;
+	left: 945px;
+	top: 14px;
+	overflow: visible;
+	width: 14px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+#dfdf {
+	position: absolute;
+	left: 828px;
+	top: 271px;
+	overflow: visible;
+	width: 136px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(0,0,0,1);
+}
+#StList {
+	position: absolute;
+	width: 342px;
+	height: 377px;
+	left: 1006px;
+	top: 212px;
+	overflow: visible;
+}
+#FirstStPic {
+	position: absolute;
+	width: 63px;
+	height: 63px;
+	left: 1210px;
+	top: 302px;
+	overflow: visible;
+}
+#FirstStName {
+	position: absolute;
+	left: 1162px;
+	top: 318px;
+	overflow: visible;
+	width: 49px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(0,0,0,1);
+}
+#SecondStPic {
+	position: absolute;
+	width: 63px;
+	height: 63px;
+	left: 1210px;
+	top: 363px;
+	overflow: visible;
+}
+#SecondStName {
+	position: absolute;
+	left: 1157px;
+	top: 379px;
+	overflow: visible;
+	width: 54px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(0,0,0,1);
+}
+#ThirdStPic {
+	position: absolute;
+	width: 63px;
+	height: 63px;
+	left: 1210px;
+	top: 424px;
+	overflow: visible;
+}
+#ThirdStName {
+	position: absolute;
+	left: 1139px;
+	top: 440px;
+	overflow: visible;
+	width: 72px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(0,0,0,1);
+}
+#StageIcon {
+	position: absolute;
+	width: 92px;
+	height: 92px;
+	left: 1243px;
+	top: 77px;
+	overflow: visible;
+}

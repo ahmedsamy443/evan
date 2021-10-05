@@ -1,0 +1,218 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+    <title>الاختبار القبلي</title>
+    <link href="w3.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Changa|Lalezar&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400&display=swap" rel="stylesheet" />
+
+    <!-- <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script> -->
+    
+</head>
+<body dir="rtl" style="font-family: 'Changa', sans-serif; background-image:url(back.png); background-image :no-repeat; background-size:cover;"">
+    <!-- <form id="form1"> -->
+
+
+
+        <panel id="Panel2" >
+            <div class="w3-container">
+                <div class="w3-col s12 w3-cell-middle w3-center  ">
+                    <h1 style="font-family: 'Changa', sans-serif;"> الاختبار التحصيلي للمعارف المرتبطة بمهارات البرمجة بلغة سكراتش
+                    </h1>
+                 
+                </div>
+            </div>
+            <div class="w3-container">
+
+                <div class="w3-col s12 ">
+                    <div class="w3-card-4 ">
+                        <header class="w3-container w3-light-grey w3-center ">
+                            <h3>
+                                <label id="Lbl_name" ></label>
+
+                            </h3>
+                        </header>
+                        <div class="w3-margin-right">
+                            <h2 style="font-family: 'Changa', sans-serif;font-color: black">تعليمات الاختبار</h2>
+                            <h3 style="font-family: 'Changa', sans-serif;font-color: black">عزيزي التلميذ:<br />
+                                1.	هذا الاختبار يساعدك على قياس معارفك في مادة الكمبيوتر وتكنولوجيا المعلومات.
+                                    <br />
+                                    2.	يحتوي هذا الاختبار علي(39) سؤال تغطي كل أهداف البرنامج.
+                                    <br />
+                                    3.	 اقرأ الأسئلة جيداً قبل الإجابة عليها.
+                                    <br />
+                                    4.	الأسئلة تنقسم إلى شقين:
+                                    <br />
+                                    -	القسم الأول :أسئلة اختيار من متعدد وعددها(37) سؤالًا، اختار بديل واحد فقط لكل سؤال.
+                                    <br />
+                                    -	القسم الثانى : أسئلة الترتيب وعددها(2) سؤالًا، اكتب الرقم المناسب أمام كل لبنة.
+                                    <br />
+                                    5.	تأكد في نهاية الاختبار أنك أجبت عن جميع الأسئلة. 
+                                    <br />
+                                    6.	اضغط على زر تسليم بعد الإنتهاء من الإجابة عن جميع الأسئلة.
+                                    <br />
+                            </h3>
+                            <hr />
+                            <img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 80px" />
+                            <br />
+                        </div>
+                        <button id="Button1" Class="w3-button w3-block w3-dark-grey" onclick="window.open('/evan/levels/questions/index.php', '_self')"  >واصل الطريق</button>
+                      
+                    
+
+                </div>
+            </div>
+            <br />
+        </panel>
+
+
+
+    <!-- </form> -->
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61374393d6e7610a49b40b75/1fevtvu75';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   
+     <script type="text/javascript" language="javascript">
+
+          
+         
+         function ActionofSelected(progress_width, currpnl_id, nxtpnl_id, answer, choiceanswer, totalQuistions) {
+             var progBar = document.getElementById('<%= progBar.ClientID%>');
+             progBar.style.width = progress_width + "%";
+
+             //alert(progress_width)
+
+             $("#Txt_quest").text(progress_width / 10 + " / " + totalQuistions);
+             $("#Txt_quest").show();
+             $('#<%= progBar.ClientID%>').show();
+            if (progress_width / 10 >= totalQuistions) {
+
+                $(currpnl_id).hide();
+                $("#Q1pane11").show();
+                $("#Q1pane1result").show();
+                //alert(currpnl_id)
+
+                //إظهار النتيجه
+
+                $.ajax({
+                    type: "POST",
+                    url: "quest1.aspx/studentResult",
+                    data: "{'St_Id': '<%= Session("st_code")%>', 'Q_id':'<%= Request("quiz_id")%>'}",
+                       contentType: "application/json; charset=utf-8",
+                       dataType: "json",
+                       success: function (response) {
+                           $("#img_gold").attr("src", response.d[2]);
+                           $("#Lbl_totalCorrect").text("الاسئلة الصحيحة : " + response.d[1]);
+                           $("#Lbl_totalMark").text(" الأسئلة الخاطئة : " + 10 - response.d[0]);
+
+
+                           if (response.d[0] == 10) {
+                               $("#Btn_retry").hide();
+                           }
+                           if (response.d[0] <= 9 && response.d[0] >= 7) {
+                               $("#btn_ans").removeClass("hiddenCls");
+                           }
+                           if (response.d[0] <= 6) {
+                               $("#btn_ans").hide();
+                               $("#Btn_retry").removeClass("hiddenCls");
+                           }
+
+                       },
+                       failure: function (response) {
+                           alert("failure");
+                       },
+                       error: function (response) {
+                           alert(response.responseText);
+                       }
+                   });
+
+
+
+                   clearInterval(x);
+                   var remainingTime = minutes + (seconds / 60) //$('#<%= lblCtime.ClientID%>').text();
+                 //alert(remainingTime)
+                   $.ajax({
+                       type: "POST",
+                       url: "quest1.aspx/SetQLvlRemainingTime",
+                       data: "{'St_Id': '<%= Session("st_code")%>', 'st_Level1_remaining_time':'" + remainingTime + "', 'Q_Id':'<%= Request("quiz_id")%>'}",
+                       contentType: "application/json; charset=utf-8",
+                       dataType: "json",
+                       success: function (response) {
+                           checkPanelStatus(response.d[1])
+                       },
+                       failure: function (response) {
+                           alert("failure");
+                       },
+                       error: function (response) {
+                           alert(response.responseText);
+                       }
+                   });
+               } else {
+                   $(currpnl_id).hide();
+                   $(nxtpnl_id).show();
+                 //alert(nxtpnl_id)
+
+                   var aid = $(currpnl_id).data("aid");
+                   var degree = (answer == choiceanswer ? 1 : 0);
+
+                   $.ajax({
+                       type: "POST",
+                       url: "quest1.aspx/nextquest",
+                       data: "{'st_code': '<%= Session("st_code")%>', 'answer':'" + (choiceanswer == 0 ? false : true) + "','degree':'" + degree + "', 'q_id':'<%= Request("quiz_id") %>', 'a_id':'" + aid + "'}",
+                       contentType: "application/json; charset=utf-8",
+                       success: function (response) {
+
+                       },
+                       failure: function (response) {
+                           alert("failure");
+                       },
+                       error: function (response) {
+                           alert(response.responseText);
+                       }
+                    });
+
+
+
+
+
+               }
+           }
+
+
+
+           function checkPanelStatus(currattempt) {
+               if (currattempt >= 3) {
+                   window.location.href = "quest1sol.aspx?quiz_id=<%= Request("quiz_id")%>";
+               }
+           }-->

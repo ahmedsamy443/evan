@@ -1,0 +1,6 @@
+E:\Sho3l Naaaaaas\Miss Rehab\Project\ScrachWebsite\ScrachWebsite\obj\Debug\ScrachWebsite.Resources.resources
+E:\Sho3l Naaaaaas\Miss Rehab\Project\ScrachWebsite\ScrachWebsite\obj\Debug\ScrachWebsite.vbproj.GenerateResource.Cache
+E:\Sho3l Naaaaaas\Miss Rehab\Project\ScrachWebsite\ScrachWebsite\obj\Debug\ScrachWebsite.dll.licenses
+C:\Users\ahmed\Downloads\ScrachWebsite\ScrachWebsite\ScrachWebsite\obj\Debug\ScrachWebsite.Resources.resources
+C:\Users\ahmed\Downloads\ScrachWebsite\ScrachWebsite\ScrachWebsite\obj\Debug\ScrachWebsite.vbproj.GenerateResource.Cache
+C:\Users\ahmed\Downloads\ScrachWebsite\ScrachWebsite\ScrachWebsite\obj\Debug\ScrachWebsite.dll.licenses

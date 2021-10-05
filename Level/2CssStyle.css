@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+
+.mediaViewInfo {
+	--web-view-name: Gameification;
+	--web-view-id: Gameification;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Gameification;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Gameification {
+	position: absolute;
+	/*width: 1347px;*/
+    width: 100%;
+    /*width:800px;*/
+    height:100%;
+	/*height: 780px;*/
+	background-color: rgba(255,255,255,1);
+	overflow: visible ;
+	--web-view-name: Gameification;
+	--web-view-id: Gameification;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#BackGround {
+	position: absolute;
+	width: 100%;
+     height:100%;
+    /*width:300px;*/
+	/*height: 758px;
+	left: -1px;
+	top: 25px;*/
+	overflow: visible;
+}
+.ContentBox {
+	position: absolute;
+	overflow: visible;
+	width: 913px;
+	height: 404px;
+	left: 79px;
+	top: 185px;
+}
+.HeadBackground {
+	position: absolute;
+	overflow: visible;
+	/*width: 1348px;*/
+    width:100%;
+    height:100%;
+	/*height: 60px;
+	left: -1px;
+	top: 0px;*/
+}
+#ContentHeader {
+	position: absolute;
+	left: 486.5px;
+	top: 196.5px;
+	overflow: visible;
+	/*width: 137px;*/
+    width:100%;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	color: rgba(91,86,86,1);
+}
+#BtnNext {
+	position: absolute;
+	width: 72px;
+	height: 72px;
+	left: 464px;
+	top: 542px;
+	overflow: visible;
+}
+#Home {
+	position: absolute;
+	left: 34px;
+	top: 20px;
+	overflow: visible;
+	width: 46px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Al-Jazeera-Arabic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+#Logoff {
+	position: absolute;
+	left: 94px;
+	top: 17px;
+	overflow: visible;
+	width: 85px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+}
+#StPic {
+	position: absolute;
+	width: 64px;
+	height: 60px;
+	left: 1270px;
+	top: 0px;
+	overflow: visible;
+}
+#StNameLogin {
+	position: absolute;
+	left: 1158px;
+	top: 20px;
+	overflow: visible;
+	width: 104px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+#ScoreIcon {
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	left: 1066px;
+	top: 15px;
+	overflow: visible;
+}
+#StTotalScore {
+	position: absolute;
+	left: 1031px;
+	top: 16px;
+	overflow: visible;
+	width: 27px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+#MidalIcon {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 962px;
+	top: 11px;
+	overflow: visible;
+}
+#StTotalMidal {
+	position: absolute;
+	left: 944px;
+	top: 14px;
+	overflow: visible;
+	width: 14px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+#dfdf {
+	position: absolute;
+    display: block;
+	/*left: 827px;
+	top: 271px;*/
+
+	overflow: visible;
+	/*width: 136px;*/
+	white-space: nowrap;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 27px;
+	color: rgba(0,0,0,1);
+  margin:  auto;
+  top:34%;
+  left:15%;
+  width:57%;
+    height: 421px;
+}
+ #StList {
+	position: absolute;
+	width: 342px;
+	height: 377px;
+	left: 1005px;
+	top: 212px;
+	overflow: visible;
+}
+#FirstStPic {
+	position: absolute;
+	width: 63px;
+	height: 63px;
+	left: 1209px;
+	top: 302px;
+	overflow: visible;
+}
+#FirstStName {
+	position: absolute;
+	left: 1161px;
+	top: 318px;
+	overflow: visible;
+	width: 49px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(0,0,0,1);
+}
+#SecondStPic {
+	position: absolute;
+	width: 63px;
+	height: 63px;
+	left: 1209px;
+	top: 363px;
+	overflow: visible;
+}
+#SecondStName {
+	position: absolute;
+	left: 1156px;
+	top: 379px;
+	overflow: visible;
+	width: 54px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(0,0,0,1);
+}
+#ThirdStPic {
+	position: absolute;
+	width: 63px;
+	height: 63px;
+	left: 1209px;
+	top: 424px;
+	overflow: visible;
+}
+#ThirdStName {
+	position: absolute;
+	left: 1138px;
+	top: 440px;
+	overflow: visible;
+	width: 72px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(0,0,0,1);
+}
+#StageIcon {
+	position: absolute;
+	width: 92px;
+	height: 92px;
+	left: 1242px;
+	top: 77px;
+	overflow: visible;
+}

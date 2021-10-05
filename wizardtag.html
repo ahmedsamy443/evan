@@ -1,0 +1,1035 @@
+﻿
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet" />
+    <style>
+        .center-div {
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            border: 3px solid green;
+        }
+        progress {
+border: none;
+    width: 80%;
+    height: 40px;
+    background: blue;
+    margin: 10px;
+}
+
+progress {
+  color: #000;
+}
+
+progress::-webkit-progress-value {
+  background: lightblue;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+  background: blue;
+}
+
+progress::-webkit-progress-bar {
+  background: lightblue;
+}
+    </style>
+</head>
+<body dir="rtl" style="font-family: 'Cairo', sans-serif;">
+
+    <form id="form1" >
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+
+         <asp:UpdatePanel  ID="UpdatePanel3" runat="server">
+            <ContentTemplate>
+
+<div style="font-size: x-large;" class="center-div" id="testpanel">
+                <div class="row">
+                    <div class="col-lg-4" style="padding:10px;text-align:center;"><label id="lblProgreespercent"></label></div>
+                    
+                    <div class="col-lg-4">
+                        <progress id="progressbaar" value="0" max="41" ></progress>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>الزمن المتبقى
+                                 <label id="lblCtime"  Font-Bold="True" Font-Names="Verdana" ForeColor="black"></label></h5>
+                    </div>
+                </div>
+            <asp:Wizard ID="Wizard1" runat="server" BackColor="#E6E2D8" BorderColor="#999999" Width="100%" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="1.2em" StartNextButtonText="التالي" FinishPreviousButtonText="السابق" StepNextButtonText="التالي" StepPreviousButtonText="السابق" OnFinishButtonClick="Wizard1_FinishButtonClick" FinishCompleteButtonText="تسليم الاختبار" HeaderText="الاختبار التحصيلي القبلي"  DisplaySideBar="False"  StepStyle-Wrap="true" StepStyle-VerticalAlign="Top" NavigationStyle-VerticalAlign="Top" SideBarStyle-VerticalAlign="Top">
+
+                <HeaderStyle BackColor="#666666" BorderColor="#E6E2D8" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" Font-Size="0.8em" ForeColor="White" HorizontalAlign="Center" Font-Names="'Cairo', sans-serif" />
+
+                <NavigationButtonStyle BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid" BorderWidth="1px" Font-Names="'Cairo', sans-serif" Font-Size="0.8em" ForeColor="#1C5E55" />
+                
+                
+
+                <SideBarButtonStyle ForeColor="White" Font-Names="'Cairo', sans-serif"  />
+
+                <SideBarStyle BackColor="#1C5E55" Font-Size="0.9em" VerticalAlign="Top" Font-Names="'Cairo', sans-serif" Height="50%" />
+                
+                <StepStyle BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderStyle="Solid" BorderWidth="2px" VerticalAlign="Top" CssClass="table-bordered" Font-Names="'Cairo', sans-serif" Font-Size="0.9em"/>
+
+                <StartNextButtonStyle CssClass="btn btn-info" Font-Names="'Cairo', sans-serif"  />
+
+                <StepNextButtonStyle CssClass="btn btn-success " />
+
+                <StepPreviousButtonStyle CssClass="btn btn-info " />
+
+                <FinishPreviousButtonStyle CssClass="btn btn-info " />
+                <FinishCompleteButtonStyle CssClass="btn btn-primary" />
+                
+                <WizardSteps >
+                    <asp:WizardStep ID="WizardStep1" runat="server" Title="سؤال : 1">
+                        <h2 style="color:darkblue">
+                        <asp:Label ID="Label1" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label>
+                        </h2>
+                        
+
+                        <h2 style="color:mediumvioletred" >1.	يستخدم برنامج Scratch  فى ..............
+                        </h2>
+                       
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            عمل قصص تفاعلية.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            تصميم رسومات متحركة.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            تركيب اللبنات مع بعضها البعض.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            جميع ماسبق  يعد صحيحاً.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+                      
+                    </asp:WizardStep>
+                    <asp:WizardStep ID="WizardStep2" runat="server" Title="سؤال : 2">
+
+                        <asp:Label ID="Label2" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred" > 2.	من مميزات برنامج Scratch  ............
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList2" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            متوافر باللغتين العربية والإنجليزية.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            برنامج تجريبى.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            يحتاج إلى إتصال بالإنترنت.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            مغلق المصدر.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+                    <%-- 3 --%>
+                    <asp:WizardStep ID="WizardStep3" runat="server" Title="سؤال : 3">
+
+                        <asp:Label ID="Label3" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">3.	يمكنك تشغيل برنامج Scratch وجهاز الكمبيوتر متصل بـــ............
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList3" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            الطابعة
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            الانترنت
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            الماسح الضوئي
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            السماعات
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%-- 4 --%>
+                    <asp:WizardStep ID="WizardStep4" runat="server" Title="سؤال : 4">
+
+                        <asp:Label ID="Label5" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">4.	لإنشاء ملف جديد فى برنامجscratch  يتم اختيار الأمر......... من قائمة File.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList4" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            Save
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            Open
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            New
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            Exit
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%-- 5 --%>
+                    <asp:WizardStep ID="WizardStep5" runat="server" Title="سؤال : 5">
+
+                        <asp:Label ID="Label6" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">5.	يوجد فى منطقة  ..........اللبنات المستخدمة فى المشروع.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList5" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            التكبير.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            الكائنات.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+المنصة.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            البرمجة
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%--6 --%>
+                    <asp:WizardStep ID="WizardStep6" runat="server" Title="سؤال : 6">
+
+                        <asp:Label ID="Label7" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">6.	من مكونات الشاشه الرئيسية لبرنامج scratch.............
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList6" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            شريط العنوان.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            منطقة البرمجة.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            المنصة.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            جميع ماسبق يعد صحيحًا.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%--7 --%>
+                    <asp:WizardStep ID="WizardStep7" runat="server" Title="سؤال : 7">
+
+                        <asp:Label ID="Label8" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">7.	منطقة .............يظهر عليها نتيجة مشروعك.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList7" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            المنصة.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                             البرمجه.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            شريط القوائم.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            الكائنات
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+                    <%--8 --%>
+                    <asp:WizardStep ID="WizardStep8" runat="server" Title="سؤال : 8">
+
+                        <asp:Label ID="Label9" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">8.	يستخدم الرمز ...... لتغيير لغة واجهة برنامج scratch إلى اللغه العربيه. 
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList8" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='<img src="preimages/1.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/2.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/3.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/4.jpg" />' Value="4" />
+
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%--9 --%>
+                    <asp:WizardStep ID="WizardStep9" runat="server" Title="سؤال : 9">
+
+                        <asp:Label ID="Label10" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">9.	يسمى تركيب مجموعة من الأوامر الرسومية فى ترتيب معين بـ ...........
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList9" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            المقطع البرمجى.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                             اتجاه الكائنات.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            مجموعات البرمجة.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            منطقة الكائنات.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%--10 --%>
+                    <asp:WizardStep ID="WizardStep10" runat="server" Title="سؤال : 10">
+
+                        <asp:Label ID="Label11" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">10.	يستخدم الرمز .............  فى إدراج كائن من المكتبة.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList10" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='<img src="preimages/5.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/6.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/7.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/8.jpg" />' Value="4" />
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+                    <%--11 --%>
+                    <asp:WizardStep ID="WizardStep11" runat="server" Title="سؤال : 11">
+
+                        <asp:Label ID="Label12" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">11.	يستخدم الرمز ......... فى تكرار الكائن على المنصة.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList11" runat="server" CssClass="text-right">
+                         <asp:ListItem Text='<img src="preimages/9.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/10.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/11.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/12.jpg" />' Value="4" />
+    </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%--12 --%>
+                    <asp:WizardStep ID="WizardStep12" runat="server" Title="سؤال : 12">
+
+                        <asp:Label ID="Label13" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">12.	للتراجع عن حذف كائن من على المنصة  يتم اختيار الأمر .............من قائمة   Edit .
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList12" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                              Help.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            Duplicate.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            Grow.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                             un Delete.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%--13 --%>
+                    <asp:WizardStep ID="WizardStep13" runat="server" Title="سؤال : 13">
+
+                        <asp:Label ID="Label14" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">13.	لحفظ المشروع في برنامج  Scratch يتم اختيار الأمر .............من قائمة   File.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList13" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                              Save as.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            Delete.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            Open
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                             New.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%--14 --%>
+                    <asp:WizardStep ID="WizardStep14" runat="server" Title="سؤال : 14">
+
+                        <asp:Label ID="Label15" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">14.	يطلق علي الصورة التي تغطى المنصة .........................
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList14" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                              خلفية المنصه.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            شريط أدوات التعديل.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            منطقة الكائنات.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                             منطقة المنصة.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+
+                    <%--15 --%>
+                    <asp:WizardStep ID="WizardStep15" runat="server" Title="سؤال : 15">
+                        <asp:Label ID="Label16" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">15.	يستخدم الرمز .......................... لرسم خلفية للمنصة.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList15" runat="server" CssClass="text-right">
+                            <asp:ListItem Text='<img src="preimages/13.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/14.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/15.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/16 .JPG" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--16 --%>
+                    <asp:WizardStep ID="WizardStep16" runat="server" Title="سؤال : 16">
+
+                        <asp:Label ID="Label17" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">16.	لفتح ملف سابق فى برنامجscratch  يتم اختيار الأمر................. من قائمة File.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList16" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                              Save.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            Open.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            New.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                             Exit.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--17 --%>
+                    <asp:WizardStep ID="WizardStep17" runat="server" Title="سؤال : 17">
+                        <asp:Label ID="Label18" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">17.	تستخدم مجموعة..........فى تحديد الأحداث التي تقع علي الكائنات لبدء تنفيذ المشروع.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList17" runat="server" CssClass="text-right">
+                               <asp:ListItem Text='<img src="preimages/17.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/18.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/19.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/20.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--18 --%>
+                    <asp:WizardStep ID="WizardStep18" runat="server" Title="سؤال : 18">
+                        <asp:Label ID="Label19" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">18. تستخدم لبنة .................. فى تنفيذ المقطع البرمجي.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList18" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='<img src="preimages/21.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/22.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/23.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/24.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--19 --%>
+                    <asp:WizardStep ID="WizardStep19" runat="server" Title="سؤال : 19">
+                        <asp:Label ID="Label20" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">19.تستخدم مجموعة ............... فى تحديد حركة الكائنات ودورانها.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList19" runat="server" CssClass="text-right">
+                                  <asp:ListItem Text='<img src="preimages/25.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/26.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/27.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/28.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--20 --%>
+                    <asp:WizardStep ID="WizardStep20" runat="server" Title="سؤال : 20">
+                        <asp:Label ID="Label21" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">20- تستخدم لبنة................ فى تحديد اتجاه حركة الكائن على المنصة.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList20" runat="server" CssClass="text-right">
+                                 <asp:ListItem Text='<img src="preimages/29.jpg"/>' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/30.jpg"/>' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/31.jpg"/>' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/32.jpg"/>' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--21 --%>
+                    <asp:WizardStep ID="WizardStep21" runat="server" Title="سؤال : 21">
+                        <asp:Label ID="Label22" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">21- تستخدم لبنة  .....................لجعل الكائن يتوقف لثوانى محدده.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList21" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='<img src="preimages/33.jpg"  style=" width:"100"; height:"100" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/34.jpg"  style=" width:"100"; height:"100"/>' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/35.jpg"  style=" width:"100"; height:"100" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/36.jpg"  style=" width:"100"; height:"100" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--22 --%>
+                    <asp:WizardStep ID="WizardStep22" runat="server" Title="سؤال : 22">
+                        <asp:Label ID="Label23" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">22- تستخدم لبنة  ............... لتكرار مقطع برمجى عدد محدد من المرات.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList22" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='<img src="preimages/37.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/38.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/39.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/40.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    
+                    <%--24 --%>
+                    <asp:WizardStep ID="WizardStep24" runat="server" Title="سؤال : 24">
+                        <asp:Label ID="Label25" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">24-	يطلق على صورة أو رسمة أخرى لنفس الكائن فى وضع مختلف ...................
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList24" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1"> منطقة المنصة. .</asp:ListItem>
+                                <asp:ListItem Value="2"> المظهر . </asp:ListItem>
+                                <asp:ListItem Value="3"> خلفية المنصة </asp:ListItem>
+                                <asp:ListItem Value="4"> منطقة الكائنات. </asp:ListItem>
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--25 --%>
+                    <asp:WizardStep ID="WizardStep25" runat="server" Title="سؤال : 25">
+                        <asp:Label ID="Label26" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">25-	يمكن استعراض المظاهر المختلفة للكائنات من خلال تبويب...........
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList25" runat="server" CssClass="text-right">
+                                 <asp:ListItem Text='<img src="preimages/41.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/42.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/43.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/44.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--26 --%>
+                    <asp:WizardStep ID="WizardStep26" runat="server" Title="سؤال : 26">
+                        <asp:Label ID="Label27" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">26- تستخدم لبنة ....... فى إظهار المظهر التالي للكائن على المنصة.
+                            
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList26" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='<img src="preimages/45.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/46.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/47.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/48.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%--27 --%>
+                    <asp:WizardStep ID="WizardStep27" runat="server" Title="سؤال : 27">
+                        <asp:Label ID="Label28" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">27- تجعل لبنة<span><img src="preimages/49.jpg" /></span>الكائن ...........عندما يصل إلى حافة المنصة. 
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList27" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='يتوقف' Value="1" />
+                                <asp:ListItem Text='يرتد' Value="2" />
+                                <asp:ListItem Text='ينتظر' Value="3" />
+                                <asp:ListItem Text='يغير اتجاهه' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+
+                    <%--28 --%>
+                    <asp:WizardStep ID="WizardStep28" runat="server" Title="سؤال : 28">
+                        <asp:Label ID="Label29" runat="server" Text="28- رتب خطوات مشروع برمجة أعماق البحار."></asp:Label><br />
+                    
+                         <img src="preimages/q28.gif" style="width:500px;"/>
+                    
+                        <br />
+                        <h2>
+                            1- <span><img src="preimages/50.jpg" /></span>
+                            2- <span><img src="preimages/51.jpg" /></span>
+                            3- <span><img src="preimages/52.jpg" /></span>
+                            4- <span><img src="preimages/53.jpg" /></span>
+                            <br />
+                            5- <span><img src="preimages/54.jpg" /></span>
+                            6- <span><img src="preimages/55.jpg" /></span>
+                            7- <span><img src="preimages/56.jpg" /></span>
+                            8- <span><img src="preimages/57.jpg" /></span>
+                            <br />
+                            </h2>
+                            
+                        <h2 style="color:mediumvioletred">اكتب الترتيب الصحيح</h2>
+                        <h3>
+                            <asp:TextBox ID="TextBox2" runat="server" Width="100%" placeholder="مثال للاجابة1,2,3,4,5,....."></asp:TextBox>
+                        </h3>
+                    </asp:WizardStep>
+
+                    <%--29 --%>
+                    <asp:WizardStep ID="WizardStep29" runat="server" Title="سؤال : 29">
+                        <asp:Label ID="Label30" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">29-	يمكن من خلال تبويب .............. التعامل مع الخلفيات.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList29" runat="server" CssClass="text-right">
+                                 <asp:ListItem Text='<img src="preimages/43.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/58.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/59.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/60.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%-- 30 --%>
+                    <asp:WizardStep ID="WizardStep30" runat="server" Title="سؤال : 30">
+
+                        <asp:Label ID="Label31" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">30- يقوم الاختيار File up Down بعكس اتجاة الخلفية .........
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList30" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                             أفقياً ورأسياً.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            أفقياً.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            رأسياً.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            لا شيء مماسبق.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+
+                    <%--31 --%>
+                    <asp:WizardStep ID="WizardStep31" runat="server" Title="سؤال : 31">
+                        <asp:Label ID="Label32" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">31- تبويب ..................... مسئول عن تشغيل وتسجيل الأصوات الخاصة بالكائنات. 
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList31" runat="server" CssClass="text-right">
+                              <asp:ListItem Text='<img src="preimages/61.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/62.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/63.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/64.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                    <%-- 32 --%>
+                    <asp:WizardStep ID="WizardStep32" runat="server" Title="سؤال : 32">
+
+                        <asp:Label ID="Label33" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">32- يحتوي برنامج Scratch علي......................
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList32" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                             مؤثرات صوتية.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            أصوات حيوانات.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                            أصوات آلات موسيقية.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            جميع ما سبق يعد صحيحاً.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+                    <%--33 --%>
+                    <asp:WizardStep ID="WizardStep33" runat="server" Title="سؤال : 33">
+                        <asp:Label ID="Label34" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">33- لإضافة مقطع صوتى للمشروع  يتم سحب لبنة ...............
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList33" runat="server" CssClass="text-right">
+                                 <asp:ListItem Text='<img src="preimages/65.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/66.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/67.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/68.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+
+                    <%--34 --%>
+                    <asp:WizardStep ID="WizardStep34" runat="server" Title="سؤال : 34">
+                        <asp:Label ID="Label35" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">
+                            34-	تستخدم مجموعة ..... ...... فى التحكم فى شكل ونمط الكائنات.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList34" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='<img src="preimages/69.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/70.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/71.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/72.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                 <%-- 35 --%>
+                    <asp:WizardStep ID="WizardStep35" runat="server" Title="سؤال : 35">
+
+                        <asp:Label ID="Label36" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">
+                            35- تستخدم لبنة <span> <img src="preimages/73.jpg" /></span> في ................
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList35" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                             حذف أى تأثيرات لونية.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            عمل تأثيرات لونية للكائن.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                             تغيير حجم الكائن.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                            توقف البرنامج.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+
+
+
+                    </asp:WizardStep>
+             
+                        <%-- 36 --%>
+                    <asp:WizardStep ID="WizardStep36" runat="server" Title="سؤال : 36">
+                        <asp:Label ID="Label37" runat="server" Text="36-	رتب اللبنات الآتية لتصميم حوار لكائن سكراتش على فترات زمنية مختلفة وذلك عند الضغط على الكائن سكراتش بإستخدام اوامر الرسائل المختلفة ليظهر الأتى ."></asp:Label><br />
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <%-- Left --%>
+                                <img src="preimages/q36.png" />
+                            </div>
+                            <br />
+                            <div class="col-lg-6">
+                                <%-- right --%>
+
+                                  <h3>- يختفي الكائن سكراتش ثم يظهر. </h3>
+                        <h3>-	تظهر رسالة "مرحبا بكم في برنامج Scratch "" لمدة 2 ثانية ثم تختفي. </h3>
+                        <h3>-	تظهر رسالة في شكل نمط التفكير لمدة (2) ثانية.</h3>
+                        <h3>-	"تظهر رسالة "أنا أساعد التلاميذ في الإبداع والإبتكار". </h3>
+                        <h3>-	تغيير نمط شكل الكائن وتعديل قيم التأثير. </h3>
+                        <h3>-	تظهر رسالة وداعاً.  </h3>
+                            </div>
+                        </div>
+                                            
+                      
+                        <h2>
+                        1- <span><img src="preimages/74.jpg" /></span>
+                            2- <span><img src="preimages/75.jpg" /></span>
+                            3- <span><img src="preimages/76.jpg" /></span>
+                            
+                            <br />
+                            4- <span><img src="preimages/78.jpg" /></span>
+                            5- <span><img src="preimages/790.png" /></span>  
+                            6- <span><img src="preimages/79.jpg" /></span>
+                            
+                            <br />
+                            7- <span><img src="preimages/80.jpg" /></span>
+                            8- <span><img src="preimages/81.jpg" /></span>
+                            9- <span><img src="preimages/82.jpg" /></span>
+
+                            </h2>
+                            
+                        <h3>اكتب الترتيب الصحيح</h3>
+                        <h3>
+                            <asp:TextBox ID="TextBox1" runat="server" Width="100%" placeholder="مثال للاجابة1,2,3,4,5,....."></asp:TextBox>
+                        </h3>
+                    </asp:WizardStep>
+                         <%--37 --%>
+                    <asp:WizardStep ID="WizardStep37" runat="server" Title="سؤال : 37">
+                        <asp:Label ID="Label38" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">
+                            37-	تستخدم  مجموعة................ فى رسم أشكال هندسية. 
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList37" runat="server" CssClass="text-right">
+                                <asp:ListItem Text='<img src="preimages/83.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/84.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/85.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/86.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                     <%--38 --%>
+                    <asp:WizardStep ID="WizardStep38" runat="server" Title="سؤال : 38">
+                        <asp:Label ID="Label39" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">
+                            38- تستخدم لبنة .................. في رسم خط على المنصة.
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList38" runat="server" CssClass="text-right">
+                                 <asp:ListItem Text='<img src="preimages/87.jpg" />' Value="1" />
+                                <asp:ListItem Text='<img src="preimages/88.jpg" />' Value="2" />
+                                <asp:ListItem Text='<img src="preimages/89.jpg" />' Value="3" />
+                                <asp:ListItem Text='<img src="preimages/90.jpg" />' Value="4" />
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                     <%--39 --%>
+                    <asp:WizardStep ID="WizardStep39" runat="server" Title="سؤال : 39">
+                        <asp:Label ID="Label40" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">
+                            39- يتم حساب زاوٌية دوران لبنة استدر من خلال .........
+                        </h2>
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList39" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            360* عدد أضلاع الشكل.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            360+ عدد أضلاع الشكل.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                              360/ عدد أضلاع الشكل.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                           320- عدد أضلاع الشكل.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+               
+             
+                <%--41 --%>
+                    <asp:WizardStep ID="WizardStep41" runat="server" Title="سؤال : 41">
+                        <asp:Label ID="Label42" runat="server" Text=" اختر الإجابة الصحيحة "></asp:Label><br />
+                        <h2 style="color:mediumvioletred">
+                            اذكر الشكل الناتج عن رسم كائن القط سكراتش:-
+                        </h2>
+                        <img src="preimages/q41.png" />
+                        <br />
+                        <h2>
+                            <asp:RadioButtonList ID="RadioButtonList41" runat="server" CssClass="text-right">
+                                <asp:ListItem Value="1">
+                            مستطيل.
+                                </asp:ListItem>
+                                <asp:ListItem Value="2">
+                            مربع.
+                                </asp:ListItem>
+                                <asp:ListItem Value="3">
+                              شكل خماسي.
+                                </asp:ListItem>
+                                <asp:ListItem Value="4">
+                           شكل سداسي.
+                                </asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </h2>
+                    </asp:WizardStep>
+                     
+                </WizardSteps>
+            </asp:Wizard>
+        </div>
+        <div runat="server" id="result">
+            <div class="center-div text-center">
+                <img src="preimages/pretag.png" />
+                <h1>
+                <asp:Button ID="Button1" runat="server" Text="متابعة"  CssClass="btn btn-success btn " Font-Size="XX-Large" />
+                    </h1>
+            </div>
+            
+            
+        </div>
+            
+            
+            
+            
+            </ContentTemplate> 
+
+         </asp:UpdatePanel>
+        
+        
+    </form>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var remainingTime = 50;
+    var minutes = 5;
+    var seconds = 0;
+    var currattem = 0;
+    var days = 0;
+    var hours = 0;
+    var x
+
+
+
+    var countDownDate = new Date(new Date().getTime() + remainingTime * 60000);
+    x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+        //alert(now)
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        //var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("<%= lblCtime.ClientID%>").innerHTML  = days + ":" + hours + "h "
+                 //+ minutes + "m " + seconds + "s ";
+        document.getElementById("<%= lblCtime.ClientID%>").innerHTML = minutes + ":" + seconds;
+
+
+
+                 // If the count down is over, write some text 
+                 if (distance <= 0) {
+                     clearInterval(x);
+                     Swal.fire(
+                        'تنبيه!',
+                        'لقد تخطيت الوقت المسموح به للإجابه!',
+                        'warning'
+                      )
+                 }
+             }, 1000);
+</script>
